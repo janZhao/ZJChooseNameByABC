@@ -2,24 +2,18 @@
 类似通讯录的方式选择人名、地名、学校名等各种名称。(可以用作通讯录或者城市地名选择)
 
 //选择学校例子
-![image]=(https://github.com/janZhao/ZJChooseNameByABC/blob/master/ZJChooseNameByABC/ZJChooseNameByABC/sample1.PNG)
+![image](https://github.com/janZhao/ZJChooseNameByABC/blob/master/ZJChooseNameByABC/ZJChooseNameByABC/sample1.PNG)
 
 //搜索学校例子
-![image]=(https://github.com/janZhao/ZJChooseNameByABC/blob/master/ZJChooseNameByABC/ZJChooseNameByABC/sample2.PNG)
+![image](https://github.com/janZhao/ZJChooseNameByABC/blob/master/ZJChooseNameByABC/ZJChooseNameByABC/sample2.PNG)
 
 详细用法见Demo:
 
-/**
- * 选择人名或者地名
- */
-- (void)selectNameABC
-{
-    [self.view endEditing:YES];
-    
-    /**
-     *  显示选择的学校
-     *  测试用数据
-     */
+//选择人名或者地名
+- (void)selectNameABC<br>
+{<br>
+
+    //测试用数据
     NSString *tmpStr = @"{\"STATUS\":\"0\",\"result\":[{\"schoolId\":\"123\",\"schoolName\":\"清华大学\"}, {\"schoolId\":\"456\",\"schoolName\":\"北京大学\"}],\"total\":\"1\"}";
     
     NSDictionary *tmpDict = [NSJSONSerialization JSONObjectWithData:[tmpStr dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:nil];
