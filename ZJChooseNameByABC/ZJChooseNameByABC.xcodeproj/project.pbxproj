@@ -25,6 +25,8 @@
 		06522BA01CBF359400721816 /* UIView+JYDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06522B981CBF359400721816 /* UIView+JYDView.m */; };
 		06522BA61CBF384D00721816 /* ZJNameSearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06522BA51CBF384D00721816 /* ZJNameSearchResultViewController.m */; };
 		06522BA91CBF3F5400721816 /* ZJConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 06522BA81CBF3F5400721816 /* ZJConstant.m */; };
+		06522BAC1CBF771A00721816 /* sample1.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 06522BAA1CBF771A00721816 /* sample1.PNG */; };
+		06522BAD1CBF771A00721816 /* sample2.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 06522BAB1CBF771A00721816 /* sample2.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		06522BA51CBF384D00721816 /* ZJNameSearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNameSearchResultViewController.m; sourceTree = "<group>"; };
 		06522BA71CBF3F5400721816 /* ZJConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJConstant.h; sourceTree = "<group>"; };
 		06522BA81CBF3F5400721816 /* ZJConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJConstant.m; sourceTree = "<group>"; };
+		06522BAA1CBF771A00721816 /* sample1.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample1.PNG; sourceTree = "<group>"; };
+		06522BAB1CBF771A00721816 /* sample2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample2.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 		06522B371CBF2FFA00721816 = {
 			isa = PBXGroup;
 			children = (
+				06522BAA1CBF771A00721816 /* sample1.PNG */,
+				06522BAB1CBF771A00721816 /* sample2.PNG */,
 				06522B421CBF2FFA00721816 /* ZJChooseNameByABC */,
 				06522B5C1CBF2FFB00721816 /* ZJChooseNameByABCTests */,
 				06522B671CBF2FFB00721816 /* ZJChooseNameByABCUITests */,
@@ -309,6 +315,8 @@
 			files = (
 				06522B531CBF2FFA00721816 /* LaunchScreen.storyboard in Resources */,
 				06522B501CBF2FFA00721816 /* Assets.xcassets in Resources */,
+				06522BAD1CBF771A00721816 /* sample2.PNG in Resources */,
+				06522BAC1CBF771A00721816 /* sample1.PNG in Resources */,
 				06522B4E1CBF2FFA00721816 /* Main.storyboard in Resources */,
 				06522B7F1CBF33C000721816 /* ZJChooseNameByABCViewController.xib in Resources */,
 			);
