@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZJChooseNameByABCViewController">
+            <connections>
+                <outlet property="coverBtn" destination="zKo-jj-olX" id="Xfu-XF-UDu"/>
+                <outlet property="searchBar" destination="8XY-eJ-X1g" id="YaA-gs-F18"/>
+                <outlet property="tableView" destination="xNQ-bc-s4a" id="99X-Ar-fy0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="请输入学校或者拼音" translatesAutoresizingMaskIntoConstraints="NO" id="8XY-eJ-X1g">
+                    <rect key="frame" x="15" y="15" width="570" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="oDC-BC-DTQ"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="w76-nN-wMJ"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xNQ-bc-s4a">
+                    <rect key="frame" x="0.0" y="65" width="600" height="535"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="CVG-fc-L83"/>
+                        <outlet property="delegate" destination="-1" id="TWv-RZ-mSp"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKo-jj-olX">
+                    <rect key="frame" x="0.0" y="65" width="600" height="535"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="coverClick:" destination="-1" eventType="touchUpInside" id="ChQ-zP-b7Y"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8XY-eJ-X1g" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="OoD-k6-I7W"/>
+                <constraint firstAttribute="trailing" secondItem="8XY-eJ-X1g" secondAttribute="trailing" constant="15" id="W9j-jX-WYO"/>
+                <constraint firstAttribute="trailing" secondItem="xNQ-bc-s4a" secondAttribute="trailing" id="Ymr-Xj-XxJ"/>
+                <constraint firstAttribute="trailing" secondItem="zKo-jj-olX" secondAttribute="trailing" id="bEr-NT-O4L"/>
+                <constraint firstAttribute="bottom" secondItem="xNQ-bc-s4a" secondAttribute="bottom" id="bqq-A8-rc2"/>
+                <constraint firstItem="xNQ-bc-s4a" firstAttribute="top" secondItem="8XY-eJ-X1g" secondAttribute="bottom" constant="15" id="cuM-JQ-0lp"/>
+                <constraint firstItem="zKo-jj-olX" firstAttribute="top" secondItem="8XY-eJ-X1g" secondAttribute="bottom" constant="15" id="fHW-co-WxJ"/>
+                <constraint firstItem="zKo-jj-olX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jtS-4e-FUV"/>
+                <constraint firstItem="8XY-eJ-X1g" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="oBq-ff-BNh"/>
+                <constraint firstItem="xNQ-bc-s4a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qy1-DK-xpg"/>
+                <constraint firstAttribute="bottom" secondItem="zKo-jj-olX" secondAttribute="bottom" id="sOB-OL-voK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>
